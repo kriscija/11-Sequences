@@ -302,7 +302,11 @@ def run_test_draw_circles():
 
 
 def draw_circles(window, points, radius, color):
-    
+    graphics_object.attach_to(window)
+
+    for k in range(len(colors)):
+        graphics_object.fill_color = colors[k]
+        window.render(0.5)
     """
     What comes in:
       -- An rg.RoseWindow
