@@ -48,8 +48,8 @@ def main():
     # ------------------------------------------------------------------
 
     run_test_print_all_items_forwards(sequence1, sequence2, sequence3, sequence4)
-#     run_test_print_all_items_backwards(sequence1, sequence2, sequence3, sequence4)
-#     run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3, sequence4)
+    run_test_print_all_items_backwards(sequence1, sequence2, sequence3, sequence4)
+    run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3, sequence4)
 #     run_test_print_items_in_second_half(sequence1, sequence2, sequence3, sequence4)
 #     run_test_print_items_that_are_bigger_than_5()  # Uses different sequences
 #     run_test_print_items_that_are_strings(sequence1, sequence2, sequence3, sequence4)
@@ -447,6 +447,9 @@ def print_items_in_second_half(sequence):
 #   -- in this sample problem, the items that are bigger than 5.
 # ----------------------------------------------------------------------
 def print_items_that_are_bigger_than_5(sequence):
+    for k in range(len(sequence)):
+        
+
     """
     Prints the items in the given sequence that are bigger than 5,
     along with their positions (indices) in the sequence,

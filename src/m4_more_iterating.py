@@ -648,7 +648,7 @@ def sum_first_n(numbers, n):
     for k in range(0,len(numbers), n):
         sum = sum + numbers[k]
     return sum
-        
+
     """
     What comes in:
       -- An sequence of numbers.
