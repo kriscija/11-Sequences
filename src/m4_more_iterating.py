@@ -557,7 +557,7 @@ def count_positive_sines(numbers):
 def run_test_sum_first_n():
     """ Tests the   sum_first_n   function. """
     # ------------------------------------------------------------------
-    # TODO: 8. Implement this TEST function.
+    # Done
     #   It TESTS the  sum_first_n  function defined below.
     #   Include at least ** 2 ** ADDITIONAL tests.
     #
@@ -627,9 +627,28 @@ def run_test_sum_first_n():
     print('       actual:  ', actual)
 
     # TO DO 8 (continued):  Add your 2 ADDITIONAL tests here:
+    # Test 8:
+    expected = 3
+    actual = sum_first_n([3, 5,], 1)
+    print()
+    print('Test 8 expected:', expected)
+    print('       actual:  ', actual)
+
+
+    # Test 8:
+    expected = 8
+    actual = sum_first_n([3, 5, ], 2)
+    print()
+    print('Test 9 expected:', expected)
+    print('       actual:  ', actual)
 
 
 def sum_first_n(numbers, n):
+    sum = 0
+    for k in range(0,len(numbers), n):
+        sum = sum + numbers[k]
+    return sum
+        
     """
     What comes in:
       -- An sequence of numbers.

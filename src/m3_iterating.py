@@ -212,7 +212,7 @@ def run_test_count_short_ones():
     print('       actual:  ', actual)
 
     # Test 9:
-    expected = 3
+    expected = 2
     seq = ['he', 'actually', 'did', 'it', 'the', 'absolute', 'madman']
     actual = count_short_ones(seq)
     print()
@@ -222,9 +222,11 @@ def run_test_count_short_ones():
 def count_short_ones(seq_of_lists):
     count = 0
     for k in range(len(seq_of_lists)):
-        if seq_of_lists[k] < 3:
+        if len(seq_of_lists[k]) < 3:
             count = count + 1
     return count
+
+
     """
     What comes in:  An sequence of sequences.
     What goes out:  Returns the number of sub-sequences in the given
@@ -245,7 +247,7 @@ def count_short_ones(seq_of_lists):
       :type seq_of_lists: (list | tuple) of (list | tuple | str)
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # Done
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
 
@@ -302,10 +304,13 @@ def run_test_draw_circles():
 
 
 def draw_circles(window, points, radius, color):
-    graphics_object.attach_to(window)
 
-    for k in range(len(colors)):
-        graphics_object.fill_color = colors[k]
+
+    for k in range(len(points)):
+
+        circle1 = rg.Circle(points[k], radius)
+        circle1.fill_color = color
+        circle1.attach_to_window
         window.render(0.5)
     """
     What comes in:
