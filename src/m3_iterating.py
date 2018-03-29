@@ -310,7 +310,7 @@ def draw_circles(window, points, radius, color):
 
         circle1 = rg.Circle(points[k], radius)
         circle1.fill_color = color
-        circle1.attach_to_window
+        circle1.attach_to(window)
         window.render(0.5)
     """
     What comes in:
@@ -336,7 +336,7 @@ def draw_circles(window, points, radius, color):
       :type color: str
     """
     # ------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # Done
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
 

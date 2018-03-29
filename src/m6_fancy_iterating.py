@@ -392,7 +392,7 @@ def print_all_items_backwards(sequence):
 def print_items_at_odd_indices(sequence):
     total = 0
     for k in range(1, len(sequence), 3):
-        total = total + sequence[k]
+        print (sequence[k], 'at index', k)
 
     return total
 
@@ -448,7 +448,7 @@ def print_items_in_second_half(sequence):
 # ----------------------------------------------------------------------
 def print_items_that_are_bigger_than_5(sequence):
     for k in range(len(sequence)):
-        
+
 
     """
     Prints the items in the given sequence that are bigger than 5,

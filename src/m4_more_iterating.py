@@ -645,7 +645,7 @@ def run_test_sum_first_n():
 
 def sum_first_n(numbers, n):
     sum = 0
-    for k in range(0,len(numbers), n):
+    for k in range(0,n):
         sum = sum + numbers[k]
     return sum
 
@@ -670,7 +670,7 @@ def sum_first_n(numbers, n):
       :type n: int
     """
     # ------------------------------------------------------------------
-    # TODO: 9. Implement and test this function.
+    # Done
     #          Tests have been written for you (above).
     #
     # RESTRICTION:
