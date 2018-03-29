@@ -51,7 +51,7 @@ def main():
     run_test_print_all_items_backwards(sequence1, sequence2, sequence3, sequence4)
     run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3, sequence4)
 #     run_test_print_items_in_second_half(sequence1, sequence2, sequence3, sequence4)
-#     run_test_print_items_that_are_bigger_than_5()  # Uses different sequences
+    run_test_print_items_that_are_bigger_than_5()  # Uses different sequences
 #     run_test_print_items_that_are_strings(sequence1, sequence2, sequence3, sequence4)
 #     run_test_print_items_that_are_odd_integers(sequence1, sequence2, sequence3, sequence4)
 
@@ -391,7 +391,7 @@ def print_all_items_backwards(sequence):
 # ----------------------------------------------------------------------
 def print_items_at_odd_indices(sequence):
     total = 0
-    for k in range(1, len(sequence), 3):
+    for k in range(1, len(sequence), 2):
         print (sequence[k], 'at index', k)
 
     return total
@@ -408,7 +408,7 @@ def print_items_at_odd_indices(sequence):
       33 is at index 5
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # Done
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
 
@@ -448,6 +448,10 @@ def print_items_in_second_half(sequence):
 # ----------------------------------------------------------------------
 def print_items_that_are_bigger_than_5(sequence):
     for k in range(len(sequence)):
+        if sequence[k] > 5:
+            print(sequence[k], 'is at index', k)
+
+
 
 
     """
@@ -465,7 +469,7 @@ def print_items_that_are_bigger_than_5(sequence):
     Precondition: All the items in the sequence are integers.
     """
     # ------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # Done
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
 
