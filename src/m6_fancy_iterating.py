@@ -390,7 +390,7 @@ def print_all_items_backwards(sequence):
 #   -- in this sample problem, every other item in the sequence.
 # ----------------------------------------------------------------------
 def print_items_at_odd_indices(sequence):
-    
+
     """
     Prints the items at the odd-numbered indices in the given sequence,
     along with their positions (indices) in the sequence.
