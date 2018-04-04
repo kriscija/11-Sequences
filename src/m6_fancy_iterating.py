@@ -52,8 +52,8 @@ def main():
     run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3, sequence4)
 #     run_test_print_items_in_second_half(sequence1, sequence2, sequence3, sequence4)
     run_test_print_items_that_are_bigger_than_5()  # Uses different sequences
-#     run_test_print_items_that_are_strings(sequence1, sequence2, sequence3, sequence4)
-#     run_test_print_items_that_are_odd_integers(sequence1, sequence2, sequence3, sequence4)
+    run_test_print_items_that_are_strings(sequence1, sequence2, sequence3, sequence4)
+    run_test_print_items_that_are_odd_integers(sequence1, sequence2, sequence3, sequence4)
 
 
 def run_test_print_all_items_forwards(sequence1, sequence2, sequence3, sequence4):
@@ -418,6 +418,8 @@ def print_items_at_odd_indices(sequence):
 #   -- in this sample problem, the second half.
 # ----------------------------------------------------------------------
 def print_items_in_second_half(sequence):
+    for k in range(len(sequence)):
+        print(sequence[k])
     """
     Prints the items in the second half of the given sequence.
     For odd-length sequences, includes the middle item in the sequence.
@@ -479,6 +481,9 @@ def print_items_that_are_bigger_than_5(sequence):
 #   -- in this sample problem, the items that are strings.
 # ----------------------------------------------------------------------
 def print_items_that_are_strings(sequence):
+    for k in range(len(sequence)):
+        if type(sequence[k]) is str:
+            print (sequence[k], 'is at index', k)
     """
     Prints the items in the given sequence that are strings,
     along with their positions (indices) in the sequence,
@@ -491,7 +496,7 @@ def print_items_that_are_strings(sequence):
       bone is at index 4
     """
     # ------------------------------------------------------------------
-    # TODO: 8. Implement and test this function.
+    # Done
     #
     # IMPORTANT:
     #   -- A string is, by definition, an object whose type is   str.
@@ -510,6 +515,14 @@ def print_items_that_are_strings(sequence):
 #   -- in this sample problem, the items that are odd integers.
 # ----------------------------------------------------------------------
 def print_items_that_are_odd_integers(sequence):
+    string = 0
+    for k in range(len(sequence)):
+        if sequence[k] is str:
+            string = string + 1
+        else:
+            w = sequence[k]
+            if w % 2 == 1:
+                print(w, 'is at index', k)
     """
     Prints the items in the given sequence that are odd integers,
     along with their positions in the sequence,
